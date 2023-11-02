@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#23272a"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewPlaceholder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/black"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toTopOf="@id/textViewID"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintDimensionRatio="1:1" />
+
+        <TextView
+            android:id="@+id/textViewID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Enter your User ID:"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:layout_margin="12dp"
+            android:textSize="16dp"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewPlaceholder" />
+
+        <EditText
+            android:id="@+id/editTextID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:hint="Enter your Phone number here:"
+            android:textColorHint="@color/white"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:layout_margin="12dp"
+            android:background="@drawable/edit_text_focused"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewID"
+            app:layout_constraintBottom_toTopOf="@+id/textViewKey" />
+
+        <TextView
+            android:id="@+id/textViewKey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Enter your key here"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:textAlignment="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextID" />
+
+        <EditText
+            android:id="@+id/editTextKey"
+            android:textColorHint="@color/white"
+            android:layout_width="0dp"
+            android:textSize="12dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your key here"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:layout_margin="12dp"
+            android:background="@drawable/edit_text_focused"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewKey"
+            app:layout_constraintBottom_toTopOf="@+id/textViewMobile" />
+
+
+        <TextView
+            android:id="@+id/textViewMobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Enter your mobile phone here:"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:textAlignment="textStart"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextKey" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextMobileNum"
+            android:hint="Enter your mobile number here"
+            android:padding="12dp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:layout_margin="12dp"
+            android:background="@drawable/edit_text_focused"
+            app:layout_constraintTop_toBottomOf="@id/textViewMobile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:padding="12dp"
+            android:layout_margin="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextMobileNum"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
