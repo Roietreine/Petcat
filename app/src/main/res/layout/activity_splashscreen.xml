@@ -57,11 +57,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="1.8" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/ic_launcher_foreground"
+        android:background="@drawable/petcatlogo"
         app:layout_constraintDimensionRatio="1:1"
+        app:shapeAppearanceOverlay="@style/CircleShapeImageview"
         app:layout_constraintWidth_percent="0.3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"

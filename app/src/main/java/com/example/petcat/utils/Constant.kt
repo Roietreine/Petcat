@@ -4,7 +4,9 @@ object Constant {
     const val REQUEST_SMS_PERMISSION = 101
     const val REQUEST_PHONE_STATE_PERMISSION = 102
 
-    const val BASE_URL = "https://api.wwwqoaaa.com/"
+    const val REQUEST_CODE = 103
+
+    const val BASE_URL = "https://autoapi.petcatshop.vip/"
 
     const val SUCCESS_CONNECTION = "Network Success"
 

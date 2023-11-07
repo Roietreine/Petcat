@@ -20,7 +20,7 @@ class WebActivity : AppCompatActivity() {
         binding.wvContent.settings.cacheMode = WebSettings.LOAD_DEFAULT
         binding.wvContent.settings.domStorageEnabled = true
         binding.wvContent.webChromeClient = WebChromeClient()
-        binding.wvContent.loadUrl("https://developer.android.com/docs")
+        binding.wvContent.loadUrl("https://auto.petcatshop.vip/")
 
         setContentView(binding.root)
 
